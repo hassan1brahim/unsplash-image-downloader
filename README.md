@@ -1,62 +1,54 @@
-# Unsplash Image Scraper
+# Unsplash Image Downloader
 
-This Python script allows you to download images from [Unsplash](https://unsplash.com) based on a given search term. It fetches and saves all relevant images from the first search results page using `requests` and `BeautifulSoup`.
+A Python script to download images from Unsplash based on a search term.
 
----
+## Description
+
+This script allows you to download multiple images from Unsplash.com for a given search term. It creates a folder with the search term as its name and saves all found images in that folder.
+
+## Features
+
+- Downloads multiple images from Unsplash search results
+- Creates organized folders for each search term
+- Handles errors gracefully
+- Progress feedback during download
 
 ## Requirements
 
 - Python 3.x
-- `requests`
-- `beautifulsoup4`
+- The following Python packages:
+  - `requests`
+  - `beautifulsoup4`
 
-### Install the dependencies:
+## Installation
 
-```bash
-pip install requests beautifulsoup4
+1. Clone this repository or download the script
+2. Install the required packages:
+   ```bash
+   pip install requests beautifulsoup4
+Usage
+Run the script from the command line with your search term as an argument:
 
- Usage
 bash
-Copy
-Edit
 python script.py <search-term>
 Example:
+
 bash
-Copy
-Edit
-python script.py spiderman
+python script.py mountains
 This will:
 
-Search Unsplash for "spiderman"
+Create a folder named "mountains"
 
-Create a folder named spiderman (if it doesn’t exist)
+Search Unsplash for "mountains"
 
-Download all found images into that folder, naming them like spiderman_0.jpg, spiderman_1.jpg, etc.
+Download all found images into the "mountains" folder
 
- Output
-The images are saved in a local directory matching the search term you provided.
+Notes
+The script uses web scraping which means it might break if Unsplash changes its HTML structure
 
-markdown
-Copy
-Edit
-project-folder/
-├── script.py
-└── spiderman/
-    ├── spiderman_0.jpg
-    ├── spiderman_1.jpg
-    └── ...
- Notes
-This script relies on the structure of Unsplash’s HTML, which may change.
+Last tested on June 11, 2025
 
-As of June 11, 2025, it looks for images with the class czQTa.
+Use responsibly and respect Unsplash's terms of service
 
-If the site’s structure changes, the script may stop working until it is updated.
-
- Disclaimer
-This tool is for educational and personal use only.
-Always respect a website’s robots.txt file and terms of service.
-
----
-
-Let me know if you want to automate downloading high-res images or if you want to adapt this into a web app.
-
+Disclaimer
+This script is for educational purposes only. Please respect copyright laws and Unsplash's terms of service when using downloaded images.
