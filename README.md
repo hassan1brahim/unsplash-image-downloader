@@ -1,4 +1,4 @@
-# 📸 Unsplash Image Downloader
+# Unsplash Image Downloader
 
 This is a Python script that downloads images from Unsplash based on a search term you provide as a command-line argument. It uses the `requests` and `BeautifulSoup` libraries to scrape image URLs and save them locally in a folder named after the search term.
 
@@ -33,13 +33,13 @@ pip install requests beautifulsoup4
 Run the script using:
 
 ```bash
-python unscraper.py <search-term>
+python unsplash_scraper.py <search-term>
 ```
 
 **Example:**
 
 ```bash
-python unscraper.py spiderman
+python unsplash_scraper.py spiderman
 ```
 
 This will:
